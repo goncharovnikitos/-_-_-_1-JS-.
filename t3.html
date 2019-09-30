@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>t3</title>
+</head>
+<body>
+<h1> Каталог автомобилей</h1>
+<button onclick="printcar();"> посмотреть информацию</button>
+<p id="infcar"> </p>
+
+    <script>
+    let Array_cars=new Array();
+    let list_mark=["Volvo", "BMW","Skoda", "Lada", "Toyota"];
+    for (let i=0; i<5; i++){
+        let car= new Object();
+    car.color="green";
+    car.mark=list_mark[i];
+    car.model="X1";
+    Array_cars.push(car);
+    }
+    
+
+   
+
+    function printcar(){
+        let inform=""; 
+        for(let j=0; j<5; j++){
+            let car=Array_cars[j];
+            //let inform; 
+            inform+="цвет: "+car.color + "<br>" +"марка: "+car.mark +"<br>" +"модель"+car.model+"<br>";
+             // document.getElementById("infcar").innerHTML =inform;
+        }
+
+        document.getElementById("infcar").innerHTML=inform;
+      
+    }
+
+
+
+        
+       
+    </script>
+</body>

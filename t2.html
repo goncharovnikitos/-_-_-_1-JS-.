@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Output data of function sin(x)</title>
+    <style>
+    	#hello {background: #ccc; display: none;}
+    </style>
+    <!-- <script src="https://yastatic.net/jquery/3.1.0/jquery.min.js"></script> -->
+</head>
+<body>
+<div id="hello">world!</div>
+    <p class="z">Нажмите кнопку для замены текста</p>
+    <button onclick ="ChangeButton();"> Кнопка </button>
+<h1 id="zagolovok" class="z"> Это заголовок. </h1>
+<!--<h1 id="zagolovok" class="z"> Это заголовок2. </h1>-->
+    <script>
+    let str_="замена прошла успешно";
+        function ChangeButton() {
+            // body...
+            document.getElementById("zagolovok").innerHTML=str_;
+
+        }
+
+        
+       
+    </script>
+</body>
