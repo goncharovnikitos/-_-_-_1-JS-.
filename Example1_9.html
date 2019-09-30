@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Example1_9</title>
+</head>
+<body>
+<p>Нажмите кнопку для объявления переменной и вывода результата.</p>
+<button onclick="myFunction()">КНОПКА</button> //Событие onclick возникает при нажатии на кнопке
+<p id="demo">Текст, помеченный меткой demo</p>
+<script>
+//объявляем функцию, которую будет вызывать кнопка по методу onclick
+function myFunction()
+{
+//объявляем переменную строковую
+let carname="Volvo";
+/*
+document.getElementById - метод объекта document. Он возвращает ссылку на узел документа,
+которую можно использовать для изменения свойств и обращения к методам узла.
+*/
+//метод getElementById, получающий данные из тега по метке demo
+// Свойство innerHTML используют для добавления текста
+// Более подробное пояснение приведено ниже.
+document.getElementById("demo").innerHTML=carname;
+}
+</script>
+</body>
+</html>
